@@ -1,0 +1,37 @@
+ <div class="content" fxLayout="row" fxLayout.sm="column" fxLayoutGap="16px">
+      <md-card fxFlex="100">
+       <h4>Gents Wear </h4>
+      <div
+        ng2-carouselamos
+        class="slides-wrapper"
+        [items]="items"
+        [width]="1200"
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item"
+      >
+      </div>
+    <ng-template #prev>
+      <img src="assets/sai1.png" id="left"/>
+    </ng-template>
+    <ng-template #next>
+      <img src="assets/right.png" id="right" />
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+
+
+
+       <md-card >
+ <img src="{{item.image}}" class="md-card-image" alt="image caption">
+ <md-card-content>
+   <h2>{{ item.productname }}</h2>
+   <p>{{ item.price }}</p>
+ </md-card-content>
+ <md-card-footer>
+ <button class="mdl-button mdl-button--icon mdl-button--colored" (click)="selectedProduct(item)" >view product</button>
+ </md-card-footer>
+</md-card>
+
+    </ng-template>
+  </md-card>
+</div>

@@ -1,0 +1,43 @@
+#container {
+    width: 100%;
+    margin: 5em auto;
+    padding: 0;
+    background:#fff;
+}
+
+/*#left {
+  padding-left: 0px;
+}
+#right {
+  padding-right: 10px;
+}
+*/
+
+
+
+
+.items {
+    width:300px;
+    height:110px;
+    background:#ECECEC;
+}
+
+.carditems {
+    max-width:300px;
+    height:110px;
+    background:#ECECEC;
+}
+
+#left, #right { 
+    margin: 30px;
+}
+
+.mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
